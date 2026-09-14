@@ -784,3 +784,56 @@
 :root[data-input-method="pointer"] :is(button, select):focus {
   outline: none;
 }
+
+/* Narrow phones must fit the viewport instead of inheriting a desktop minimum. */
+@media (max-width: 700px) {
+  .rd-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "brand actions" "period period";
+    gap: 16px 8px;
+    height: auto;
+  }
+  .rd-brand {
+    grid-area: brand;
+    justify-self: start;
+  }
+  .rd-header-actions {
+    grid-area: actions;
+    margin-left: 0;
+    min-width: 0;
+  }
+  .rd-period {
+    grid-area: period;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-top: 0;
+    min-width: 0;
+  }
+  .rd-period button {
+    height: 44px;
+    padding: 0 4px;
+    white-space: normal;
+    line-height: 1.2;
+  }
+  .rd-task-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .rd-task {
+    min-width: 0;
+  }
+  .rd-task h3 {
+    overflow-wrap: anywhere;
+  }
+}
+@media (max-width: 360px) {
+  .rd-profile small {
+    display: none;
+  }
+  .rd-task-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .rd-task {
+    min-height: 0;
+  }
+}

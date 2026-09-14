@@ -57,7 +57,7 @@ components:
 
 A spacious workspace with a cool gray field, rounded white panels, dark teal controls and pastel content. The user-provided Panze screenshot is the visual authority; Uplift AI and LunchLink supply the product content. Every destination keeps the same visual shell.
 
-This system belongs to the independent `panze/` package, served on strict port 5180. The approved finish review and its desktop (1440px) and mobile (390px) evidence are recorded in `.impeccable/review/finish-review.md`.
+This system belongs to the independent `dashboard-4/` package, served on strict port 5180. The approved finish review and its desktop (1440px) and mobile (390px) evidence are recorded in `.impeccable/review/finish-review.md`.
 
 ## Colors
 
@@ -83,7 +83,7 @@ Use DM Sans throughout. Page headings are 30px on desktop, 28px below 1200px and
 
 All 12 destinations render inside one `ReferenceDashboard` shell. Operational content stays inside `.panze-ui`. The home uses a fixed `--u: 0.7px` plus explicit readable text sizes; do not restore viewport-driven enlargement. Desktop header height is 82px and the introduction is 94px. Main margins are 82px left and 24px right. Panel padding is generally 22px, with 18px inside content cards.
 
-The home retains its original three-column proportions and stacks responsively. Library columns are 200px, flexible content and 250px; content uses three cards per row from 1400px and two below. At 1200px the library has two main columns; at 950px it stacks. At 700px principal panels use one column, page headings become 26px, panel padding is 19–20px, and the fixed bottom rail preserves 44px navigation targets. Mobile actions and form fields retain 44px minimum heights. Tables scroll inside their wrappers; filters wrap. Body minimum width remains 360px.
+The home retains its original three-column proportions and stacks responsively. Library columns are 200px, flexible content and 250px; content uses three cards per row from 1400px and two below. At 1200px the library has two main columns; at 950px it stacks. At 700px principal panels use one column, page headings become 26px, panel padding is 19–20px, and the fixed bottom rail preserves 44px navigation targets. Mobile actions and form fields retain 44px minimum heights. Tables scroll inside their wrappers; filters wrap. The body has no fixed minimum width. Below 700px, a two-row header grid keeps the brand/profile row and four period controls within the viewport. At 360px and below, task cards become one column and the secondary profile description hides; all sections are verified down to 320px.
 
 ## Elevation & Depth
 
