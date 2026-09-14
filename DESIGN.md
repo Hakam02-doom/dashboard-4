@@ -63,6 +63,16 @@ This system belongs to the independent `panze/` package, served on strict port 5
 
 Dark teal anchors selected pills, circular navigation and primary actions. White panels sit on a subtly graded cool gray field: `linear-gradient(115deg, #f2f3f3 0%, #edf1f4 63%, #e4eff4 100%)`. Mint, lavender, peach and sky distinguish content and status; they are supporting fills, not competing action colors. Muted text and fine gray rules organize dense operational information.
 
+## Appearance
+
+The header moon/sun toggle switches the entire workspace between light and dark. Light remains the default. The choice persists under `dashboard-4-theme` in localStorage, with a guarded pre-render initialization in `index.html` to avoid a light flash. Storage failures never prevent switching.
+
+`src/theme.css` is imported last and defines dark semantic color tokens on `:root[data-theme="dark"]`. Component CSS consumes these tokens with the exact existing light colors as fallbacks. Keep one switching mechanism, including native form `color-scheme`. Do not change component geometry or text sizes between appearances.
+
+Dark canvas is #101a1b, panels #1b292b, raised surfaces #293b3d, primary text #edf4f1 and secondary text #b4c4bf. Pale mint #b5dfd0 marks selected controls and primary actions with dark #122c27 text. Peach, blue, pink and mint cards use darker tinted surfaces. Charts keep their series hues while neutral tracks, markers and tooltips adapt.
+
+The toggle remains visible on desktop, tablet and mobile. Preserve mouse-click outline behavior and keyboard focus visibility in both themes.
+
 ## Typography
 
 The user requested a more compact interface after the first font-only reduction still looked zoomed. `src/compact-layout.css`, imported last, is the authority for final density. Use actual font, spacing and component dimensions rather than CSS zoom or transforms.

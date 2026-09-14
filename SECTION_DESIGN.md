@@ -48,6 +48,8 @@ This section system extends the approved home without changing its component or 
 
 Keep the home's cool canvas and white panels. Pastel peach, blue, pink and mint group content by workflow state; colored states also have text labels. Teal identifies selection and primary actions. Scope section color utilities to `.rd-section-content` so they cannot recolor home chart dots.
 
+All sections also support the shared dark theme from `theme.css`. Use semantic color roles with existing light-color fallbacks; the theme changes surfaces, text, borders, icons, forms, status chips and overlays without changing layout. The header toggle is available at every breakpoint.
+
 ## Typography
 
 DM Sans carries every page. Final density comes from `compact-layout.css`, imported last. Page headings are 30px desktop, 28px tablet and 26px mobile. Panel titles are 18px, content titles are 15px desktop and 16px mobile, and descriptive text is 13–14px. Small metadata stays readable and mobile form inputs use 16px. Cards, controls and padding shrink alongside typography so the interface feels compact rather than zoomed.

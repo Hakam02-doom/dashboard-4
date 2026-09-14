@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   LayoutGrid,
   CalendarDays,
@@ -27,6 +27,8 @@ import {
   Share2,
   Sparkles,
   X,
+  Sun,
+  Moon,
 } from "lucide-react";
 import "@fontsource/dm-sans/latin-400.css";
 import "@fontsource/dm-sans/latin-500.css";
@@ -229,6 +231,20 @@ export default function ReferenceDashboard({
   view = "Dashboard",
   children,
 }) {
+  const [theme, setTheme] = useState(() =>
+    document.documentElement.dataset.theme === "dark" ? "dark" : "light",
+  );
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute("content", theme === "dark" ? "#101a1b" : "#edf1f3");
+    try {
+      localStorage.setItem("dashboard-4-theme", theme);
+    } catch {
+      // The toggle still works when browser storage is unavailable.
+    }
+  }, [theme]);
   const [menuOpen, setMenuOpen] = useState(false);
   const [range, setRange] = useState("This Month");
   const [day, setDay] = useState("Today");
@@ -381,6 +397,23 @@ export default function ReferenceDashboard({
             label="Workspace settings"
             onClick={() => onNavigate("Settings")}
           />
+          <button
+            className="rd-icon rd-theme-toggle"
+            aria-label={
+              theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+            }
+            title={
+              theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+            }
+            aria-pressed={theme === "dark"}
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
+            {theme === "dark" ? (
+              <Sun strokeWidth={1.5} />
+            ) : (
+              <Moon strokeWidth={1.5} />
+            )}
+          </button>
           <button className="rd-profile" onClick={() => onNavigate("Settings")}>
             <span className="rd-profile-avatar">L</span>
             <span>
@@ -614,7 +647,7 @@ export default function ReferenceDashboard({
                         cy="110"
                         r="84"
                         fill="none"
-                        stroke="#f1f1fa"
+                        stroke="var(--color-chart-neutral, #f1f1fa)"
                         strokeWidth="32"
                       />
                       {stats.map(([label, value, color]) => {
@@ -632,7 +665,7 @@ export default function ReferenceDashboard({
                               {
                                 orange: "url(#rd-donut-orange)",
                                 blue: "url(#rd-donut-blue)",
-                                neutral: "#f1f1fa",
+                                neutral: "var(--color-chart-neutral, #f1f1fa)",
                               }[color]
                             }
                             strokeWidth="32"

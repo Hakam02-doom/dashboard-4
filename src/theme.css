@@ -1,0 +1,61 @@
+/* Dark appearance changes semantic colors only; the approved light values remain
+   the fallbacks in each component stylesheet. */
+:root {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-canvas: #101a1b;
+  --color-canvas-mid: #121e20;
+  --color-canvas-end: #142329;
+  --color-surface: #1b292b;
+  --color-surface-raised: #293b3d;
+  --color-text-primary: #edf4f1;
+  --color-text-secondary: #b4c4bf;
+  --color-border: #405654;
+  --color-accent-solid: #b5dfd0;
+  --color-accent-hover: #c6ecdf;
+  --color-accent-text: #a2dcca;
+  --color-on-accent: #122c27;
+  --color-on-accent-tint: #153d2e18;
+  --color-success-surface: #223b31;
+  --color-success-text: #9addba;
+  --color-warning-surface: #3b3027;
+  --color-warning-text: #ffc394;
+  --color-info-surface: #213a48;
+  --color-info-text: #8bd4fa;
+  --color-review-surface: #3a2e40;
+  --color-review-text: #efb4e6;
+  --color-creative-text: #c5baff;
+  --color-chart-neutral: #35474b;
+  --color-chart-highlight: #ffffff0e;
+  --color-track: #304145;
+  --color-shadow: #00000050;
+  --color-backdrop: #030c10b8;
+}
+.rd-header-actions > .rd-theme-toggle {
+  display: inline-flex;
+}
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] textarea {
+  color: var(--color-text-primary);
+}
+:root[data-theme="dark"] input::placeholder,
+:root[data-theme="dark"] textarea::placeholder {
+  color: var(--color-text-secondary);
+  opacity: 1;
+}
+:root[data-theme="dark"] .px-toolbar select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23edf4f1' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+}
+:root[data-theme="dark"] .rd-shell button.active:hover,
+:root[data-theme="dark"] .rd-shell button.selected:hover,
+:root[data-theme="dark"] .rd-shell .px-button.primary:hover {
+  color: var(--color-on-accent);
+}
+@media (max-width: 700px) {
+  .rd-header-actions > .rd-theme-toggle {
+    width: 44px;
+    height: 44px;
+  }
+}

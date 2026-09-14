@@ -29,6 +29,7 @@ import { extraContent } from "./content-data";
 import "./section-shell.css";
 import "./section-pages.css";
 import "./compact-layout.css";
+import "./theme.css";
 const views = [
   "Dashboard",
   "Content library",

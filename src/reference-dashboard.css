@@ -1,7 +1,7 @@
 .app-shell.rd-host {
   display: block;
   padding: 0;
-  background: #edf1f3;
+  background: var(--color-canvas, #edf1f3);
 }
 .rd-host > .sidebar,
 .rd-host > .main {
@@ -9,11 +9,11 @@
 }
 .rd-shell {
   --u: clamp(0.72px, 0.0543478261vw, 1.18px);
-  --rd-ink: #071f21;
-  --rd-line: #d3d6d6;
+  --rd-ink: var(--color-text-primary, #071f21);
+  --rd-line: var(--color-border, #d3d6d6);
   font-family: "DM Sans", sans-serif;
-  color: #090b0c;
-  background: linear-gradient(115deg, #f2f3f3 0%, #edf1f4 63%, #e4eff4 100%);
+  color: var(--color-text-primary, #090b0c);
+  background: linear-gradient(115deg, var(--color-canvas, #f2f3f3) 0%, var(--color-canvas-mid, #edf1f4) 63%, var(--color-canvas-end, #e4eff4) 100%);
   min-height: 100vh;
   font-size: min(calc(20 * var(--u)), max(13px, calc(18.5 * var(--u))));
   padding-bottom: calc(24 * var(--u));
@@ -29,15 +29,15 @@
 .rd-shell button:focus-visible,
 .rd-shell input:focus-visible,
 .rd-shell select:focus-visible {
-  outline: 2px solid #087b80;
+  outline: 2px solid var(--color-accent-text, #087b80);
   outline-offset: 4px;
 }
 .rd-shell button:hover {
-  color: #06787e;
+  color: var(--color-accent-text, #06787e);
 }
 .rd-shell ::selection {
-  color: #082e30;
-  background: #c7e5e4;
+  color: var(--color-on-accent, #082e30);
+  background: var(--color-accent-solid, #c7e5e4);
 }
 .rd-header {
   height: calc(164 * var(--u));
@@ -70,7 +70,7 @@
 }
 .rd-period button,
 .rd-task-days button {
-  border: 1px solid #c3c8ca;
+  border: 1px solid var(--color-border, #c3c8ca);
   border-radius: 999px;
   height: calc(55 * var(--u));
   padding: 0 calc(25 * var(--u));
@@ -82,9 +82,9 @@
   padding: 0 calc(15 * var(--u));
 }
 .rd-shell button.active {
-  background: var(--rd-ink);
-  border-color: var(--rd-ink);
-  color: white;
+  background: var(--color-accent-solid, var(--rd-ink));
+  border-color: var(--color-accent-solid, var(--rd-ink));
+  color: var(--color-on-accent, white);
 }
 .rd-header-actions {
   margin-left: auto;
@@ -116,13 +116,13 @@
   top: calc(15 * var(--u));
   right: calc(14 * var(--u));
   background: #f62355;
-  box-shadow: 0 0 0 2px white;
+  box-shadow: 0 0 0 2px var(--color-surface, white);
 }
 .rd-header-actions > .rd-icon,
 .rd-rail .rd-icon {
-  background: #fff;
+  background: var(--color-surface, #fff);
   border: 0;
-  color: #566362;
+  color: var(--color-text-secondary, #566362);
   width: calc(54 * var(--u));
   height: calc(54 * var(--u));
 }
@@ -148,11 +148,11 @@
   font-size: min(calc(23 * var(--u)), max(13px, calc(21 * var(--u))));
   display: block;
   font-weight: 500;
-  color: #20223d;
+  color: var(--color-text-primary, #20223d);
 }
 .rd-profile small {
   font-size: min(calc(17 * var(--u)), max(13px, calc(15.5 * var(--u))));
-  color: #4c4b60;
+  color: var(--color-text-secondary, #4c4b60);
   display: block;
   line-height: 1.6;
 }
@@ -175,7 +175,7 @@
   align-items: flex-start;
 }
 .rd-intro p {
-  color: #293a3d;
+  color: var(--color-text-primary, #293a3d);
   font-size: min(calc(26 * var(--u)), max(13px, calc(24 * var(--u))));
   margin-bottom: calc(6 * var(--u));
   line-height: 1.3;
@@ -194,14 +194,14 @@
   height: calc(83 * var(--u));
   margin-top: calc(7 * var(--u));
   padding: 0 calc(22 * var(--u));
-  border: 1px solid #bec6c8;
+  border: 1px solid var(--color-border, #bec6c8);
   border-radius: 999px;
   gap: calc(19 * var(--u));
 }
 .rd-search > svg {
   width: calc(37 * var(--u));
   height: calc(37 * var(--u));
-  color: #728081;
+  color: var(--color-text-secondary, #728081);
 }
 .rd-search input {
   background: transparent;
@@ -210,11 +210,11 @@
   min-width: 0;
   width: 100%;
   font-size: calc(21 * var(--u));
-  color: #233638;
-  caret-color: #087b80;
+  color: var(--color-text-primary, #233638);
+  caret-color: var(--color-accent-text, #087b80);
 }
 .rd-search input::placeholder {
-  color: #566366;
+  color: var(--color-text-secondary, #566366);
   opacity: 1;
 }
 .rd-search button {
@@ -227,7 +227,7 @@
   align-items: start;
 }
 .rd-panel {
-  background: rgba(255, 255, 255, 0.94);
+  background: var(--color-surface, rgba(255, 255, 255, 0.94));
   border-radius: calc(52 * var(--u));
   min-width: 0;
 }
@@ -273,8 +273,8 @@
 .rd-task-filter > span {
   width: calc(34 * var(--u));
   height: calc(34 * var(--u));
-  background: var(--rd-ink);
-  color: white;
+  background: var(--color-accent-solid, var(--rd-ink));
+  color: var(--color-on-accent, white);
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -289,7 +289,7 @@
   border: 0;
   font-size: calc(21 * var(--u));
   padding-right: calc(15 * var(--u));
-  color: #0d1819;
+  color: var(--color-text-primary, #0d1819);
   cursor: pointer;
 }
 .rd-task-filter > svg {
@@ -308,16 +308,16 @@
   min-height: calc(195 * var(--u));
 }
 .rd-task.tone-0 {
-  background: #fff6ed;
+  background: var(--color-warning-surface, #fff6ed);
 }
 .rd-task.tone-1 {
-  background: #ecf9ff;
+  background: var(--color-info-surface, #ecf9ff);
 }
 .rd-task.tone-2 {
-  background: #fcedff;
+  background: var(--color-review-surface, #fcedff);
 }
 .rd-task.tone-3 {
-  background: #eafff8;
+  background: var(--color-success-surface, #eafff8);
 }
 .rd-task-top {
   display: flex;
@@ -334,19 +334,19 @@
   stroke-width: 2;
 }
 .symbol-0 {
-  color: #fa4928;
+  color: var(--color-warning-text, #fa4928);
 }
 .symbol-1 {
-  color: #092631;
+  color: var(--color-info-text, #092631);
 }
 .symbol-2 {
-  color: #ed2480;
+  color: var(--color-review-text, #ed2480);
 }
 .symbol-3 {
-  color: #2610d4;
+  color: var(--color-creative-text, #2610d4);
 }
 .rd-task-top button {
-  color: #73847e;
+  color: var(--color-text-secondary, #73847e);
   padding: 0;
 }
 .rd-task-top button svg {
@@ -372,7 +372,7 @@
   font-size: min(calc(17 * var(--u)), max(13px, calc(15.5 * var(--u))));
   line-height: 1.4;
   margin-top: calc(9 * var(--u));
-  color: #4a4c4c;
+  color: var(--color-text-secondary, #4a4c4c);
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -427,7 +427,7 @@
   background: #009cf5;
 }
 .rd-dot.neutral {
-  background: #f1f1fa;
+  background: var(--color-chart-neutral, #f1f1fa);
 }
 .rd-activity {
   position: relative;
@@ -448,7 +448,7 @@
 .rd-chart-tip {
   position: absolute;
   top: calc(41 * var(--u));
-  background: #edf2f5;
+  background: var(--color-surface-raised, #edf2f5);
   border-radius: calc(15 * var(--u)) calc(15 * var(--u)) calc(15 * var(--u)) 0;
   padding: calc(7 * var(--u)) calc(14 * var(--u));
   font-size: min(calc(15 * var(--u)), max(13px, calc(14 * var(--u))));
@@ -474,11 +474,11 @@
 .rd-chart-days button {
   padding: calc(2 * var(--u));
   font-size: min(calc(16 * var(--u)), max(13px, calc(14.5 * var(--u))));
-  color: #6b7182;
+  color: var(--color-text-secondary, #6b7182);
 }
 .rd-chart-caption {
   font-size: calc(11 * var(--u));
-  color: #686e73;
+  color: var(--color-text-secondary, #686e73);
   text-align: right;
   margin-top: calc(5 * var(--u));
 }
@@ -487,8 +487,8 @@
   top: calc(96 * var(--u));
   right: calc(25 * var(--u));
   z-index: 3;
-  background: white;
-  box-shadow: 0 8px 25px #0d31311a;
+  background: var(--color-surface, white);
+  box-shadow: 0 8px 25px var(--color-shadow, #0d31311a);
   border-radius: 15px;
   padding: 14px;
   font-size: 13px;
@@ -497,7 +497,7 @@
   display: block;
   font-size: 12px;
   margin-top: 8px;
-  color: #566366;
+  color: var(--color-text-secondary, #566366);
 }
 .rd-pipeline {
   margin-top: calc(6 * var(--u));
@@ -524,18 +524,18 @@
   display: flex;
   align-items: center;
   gap: calc(22 * var(--u));
-  color: #444a4b;
+  color: var(--color-text-secondary, #444a4b);
   font-size: min(calc(19 * var(--u)), max(13px, calc(17.5 * var(--u))));
   font-variant-numeric: tabular-nums;
 }
 .rd-progress-label b {
   height: calc(20 * var(--u));
   width: 1px;
-  background: #526060;
+  background: var(--color-border, #526060);
 }
 .rd-progress-track {
   height: calc(32 * var(--u));
-  background: #e3e3e9;
+  background: var(--color-track, #e3e3e9);
   border-radius: 999px;
   display: block;
   overflow: hidden;
@@ -551,8 +551,8 @@
     0deg,
     transparent 0px,
     transparent 3px,
-    #ffffff20 3px,
-    #ffffff20 6px
+    var(--color-chart-highlight, #ffffff20) 3px,
+    var(--color-chart-highlight, #ffffff20) 6px
   );
 }
 .rd-progress-track .purple {
@@ -573,7 +573,7 @@
   gap: 15px;
   margin-top: calc(27 * var(--u));
   font-size: calc(12 * var(--u));
-  color: #697371;
+  color: var(--color-text-secondary, #697371);
 }
 .rd-filter-note {
   font-size: 13px;
@@ -608,7 +608,7 @@
 }
 .rd-schedule-label {
   font-size: min(calc(17 * var(--u)), max(13px, calc(15.5 * var(--u))));
-  color: #4c5051;
+  color: var(--color-text-secondary, #4c5051);
   display: block;
   white-space: nowrap;
 }
@@ -638,12 +638,12 @@
   align-items: center;
   gap: calc(8 * var(--u));
   font-size: min(calc(20 * var(--u)), max(13px, calc(18.5 * var(--u))));
-  color: #343a3a;
+  color: var(--color-text-primary, #343a3a);
   margin-top: calc(11 * var(--u));
 }
 .rd-channel svg {
   width: calc(23 * var(--u));
-  color: #009cf5;
+  color: var(--color-info-text, #009cf5);
 }
 .rd-text-link {
   display: flex;
@@ -687,11 +687,11 @@
 .rd-review p {
   margin-top: calc(3 * var(--u));
   font-size: min(calc(18 * var(--u)), max(13px, calc(16.5 * var(--u))));
-  color: #555b5b;
+  color: var(--color-text-secondary, #555b5b);
   line-height: 1.3;
 }
 .rd-review button {
-  background: #edefef;
+  background: var(--color-surface-raised, #edefef);
   border-radius: 999px;
   display: inline-flex;
   align-items: center;
@@ -710,11 +710,11 @@
   gap: 20px;
   font-size: calc(13 * var(--u));
   padding: calc(25 * var(--u)) 0 0;
-  color: #5b6969;
+  color: var(--color-text-secondary, #5b6969);
 }
 .rd-empty {
   font-size: 14px;
-  color: #566366;
+  color: var(--color-text-secondary, #566366);
   line-height: 1.6;
   padding: 20px 0;
 }
@@ -853,8 +853,8 @@
     z-index: 10;
     flex-direction: row;
     justify-content: space-around;
-    background: #f6f8f8;
-    border-top: 1px solid #d8dfe0;
+    background: var(--color-surface, #f6f8f8);
+    border-top: 1px solid var(--color-border, #d8dfe0);
     gap: 5px;
   }
   .rd-rail .rd-icon {
