@@ -55,6 +55,22 @@ function App() {
     [toast, setToast] = useState("");
   const dialog = useRef(null);
   useEffect(() => {
+    // Native selects can match :focus-visible after a pointer click.
+    const pointer = () => {
+      document.documentElement.dataset.inputMethod = "pointer";
+    };
+    const keyboard = () => {
+      document.documentElement.dataset.inputMethod = "keyboard";
+    };
+    document.addEventListener("pointerdown", pointer, true);
+    document.addEventListener("keydown", keyboard, true);
+    return () => {
+      document.removeEventListener("pointerdown", pointer, true);
+      document.removeEventListener("keydown", keyboard, true);
+      delete document.documentElement.dataset.inputMethod;
+    };
+  }, []);
+  useEffect(() => {
     const change = () => {
       setView(currentView());
       setQuery("");

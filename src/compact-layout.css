@@ -779,3 +779,8 @@
   }
 }
 @media(max-width:700px){.px-toolbar > div:not(.px-pills) > button:not(.px-round){min-width:44px;min-height:44px}.px-toolbar .px-round{width:44px;height:44px}}
+
+/* Clicked controls keep their normal border; keyboard focus remains visible. */
+:root[data-input-method="pointer"] :is(button, select):focus {
+  outline: none;
+}
