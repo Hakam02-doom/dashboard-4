@@ -439,7 +439,7 @@
   margin-top: calc(22 * var(--u));
   position: relative;
 }
-.rd-chart > svg {
+.rd-chart-plot > svg {
   display: block;
   width: 100%;
   height: calc(283 * var(--u));
@@ -973,7 +973,7 @@
     height: 370px;
     padding: 25px;
   }
-  .rd-chart > svg {
+  .rd-chart-plot > svg {
     height: 252px;
   }
   .rd-chart {

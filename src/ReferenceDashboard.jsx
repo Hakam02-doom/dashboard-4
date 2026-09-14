@@ -152,47 +152,53 @@ function ActivityChart({ range }) {
             </span>
           )}
         </div>
-        <svg
-          viewBox="0 0 360 290"
-          preserveAspectRatio="none"
-          role="img"
-          aria-label="Illustrative SEO and social content activity. Select a day below to inspect its values."
-        >
-          <defs>
-            <linearGradient id="rd-blue-fill" x1="0" y1="0" x2="0" y2="1">
-              <stop stopColor="#0b9fff" stopOpacity=".16" />
-              <stop offset="1" stopColor="#0b9fff" stopOpacity="0" />
-            </linearGradient>
-            <linearGradient id="rd-orange-fill" x1="0" y1="0" x2="0" y2="1">
-              <stop stopColor="#ff8c00" stopOpacity=".17" />
-              <stop offset="1" stopColor="#ff8c00" stopOpacity="0" />
-            </linearGradient>
-          </defs>
-          <path d={`${a} L360 280 L0 280 Z`} fill="url(#rd-blue-fill)" />
-          <path d={a} stroke="#0097f5" strokeWidth="1.3" fill="none" />
-          {showSocial && (
-            <>
-              <path d={`${b} L360 280 L0 280 Z`} fill="url(#rd-orange-fill)" />
-              <path d={b} stroke="#ff8300" strokeWidth="1.3" fill="none" />
-            </>
-          )}
-          <path
-            d={`M${point * 60} 105 V280`}
-            stroke="#92999b"
-            strokeDasharray="3 4"
-          />
+        <div className="rd-chart-plot">
+          <svg
+            viewBox="0 0 360 290"
+            preserveAspectRatio="none"
+            role="img"
+            aria-label="Illustrative SEO and social content activity. Select a day below to inspect its values."
+          >
+            <defs>
+              <linearGradient id="rd-blue-fill" x1="0" y1="0" x2="0" y2="1">
+                <stop stopColor="#0b9fff" stopOpacity=".16" />
+                <stop offset="1" stopColor="#0b9fff" stopOpacity="0" />
+              </linearGradient>
+              <linearGradient id="rd-orange-fill" x1="0" y1="0" x2="0" y2="1">
+                <stop stopColor="#ff8c00" stopOpacity=".17" />
+                <stop offset="1" stopColor="#ff8c00" stopOpacity="0" />
+              </linearGradient>
+            </defs>
+            <path d={`${a} L360 280 L0 280 Z`} fill="url(#rd-blue-fill)" />
+            <path d={a} stroke="#0097f5" strokeWidth="1.3" fill="none" />
+            {showSocial && (
+              <>
+                <path
+                  d={`${b} L360 280 L0 280 Z`}
+                  fill="url(#rd-orange-fill)"
+                />
+                <path d={b} stroke="#ff8300" strokeWidth="1.3" fill="none" />
+              </>
+            )}
+            <path
+              d={`M${point * 60} 105 V280`}
+              stroke="#92999b"
+              strokeDasharray="3 4"
+            />
+          </svg>
           {[data.articles, ...(showSocial ? [data.social] : [])].map((d, i) => (
-            <circle
+            <span
               key={i}
-              cx={point * 60}
-              cy={265 - (d[point] / scale) * 210}
-              r="6"
-              fill="white"
-              stroke={i ? "#ff8300" : "#0097f5"}
-              strokeWidth="2.5"
+              className="rd-chart-point"
+              aria-hidden="true"
+              style={{
+                left: `${(point / 6) * 100}%`,
+                top: `${((265 - (d[point] / scale) * 210) / 290) * 100}%`,
+                borderColor: i ? "#ff8300" : "#0097f5",
+              }}
             />
           ))}
-        </svg>
+        </div>
         <div className="rd-chart-days">
           {data.labels.map((d, i) => (
             <button

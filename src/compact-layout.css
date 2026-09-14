@@ -187,8 +187,21 @@
 .rd-chart {
   margin-top: 6px;
 }
-.rd-chart > svg {
+.rd-chart-plot {
+  position: relative;
+}
+.rd-chart-plot > svg {
   height: 196px;
+}
+.rd-chart-point {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border: 2px solid;
+  border-radius: 50%;
+  background: white;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 .rd-chart-tip {
   top: 30px;
@@ -641,7 +654,7 @@
     height: 302px;
     padding: 20px;
   }
-  .rd-chart > svg {
+  .rd-chart-plot > svg {
     height: 196px;
   }
   .rd-pipeline {
