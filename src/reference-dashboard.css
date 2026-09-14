@@ -15,7 +15,7 @@
   color: #090b0c;
   background: linear-gradient(115deg, #f2f3f3 0%, #edf1f4 63%, #e4eff4 100%);
   min-height: 100vh;
-  font-size: calc(20 * var(--u));
+  font-size: min(calc(20 * var(--u)), max(13px, calc(18.5 * var(--u))));
   padding-bottom: calc(24 * var(--u));
 }
 .rd-shell button,
@@ -48,7 +48,7 @@
 }
 .rd-brand {
   color: var(--rd-ink);
-  font-size: calc(60 * var(--u));
+  font-size: min(calc(60 * var(--u)), max(13px, calc(55 * var(--u))));
   font-weight: 600;
   letter-spacing: -0.065em;
   line-height: 0.8;
@@ -74,7 +74,7 @@
   border-radius: 999px;
   height: calc(55 * var(--u));
   padding: 0 calc(25 * var(--u));
-  font-size: calc(18 * var(--u));
+  font-size: min(calc(18 * var(--u)), max(13px, calc(16.5 * var(--u))));
   white-space: nowrap;
 }
 .rd-period button {
@@ -142,16 +142,16 @@
   background: #ffc342;
   color: #203a33;
   font-weight: 600;
-  font-size: calc(26 * var(--u));
+  font-size: min(calc(26 * var(--u)), max(13px, calc(24 * var(--u))));
 }
 .rd-profile strong {
-  font-size: calc(23 * var(--u));
+  font-size: min(calc(23 * var(--u)), max(13px, calc(21 * var(--u))));
   display: block;
   font-weight: 500;
   color: #20223d;
 }
 .rd-profile small {
-  font-size: calc(17 * var(--u));
+  font-size: min(calc(17 * var(--u)), max(13px, calc(15.5 * var(--u))));
   color: #4c4b60;
   display: block;
   line-height: 1.6;
@@ -176,13 +176,13 @@
 }
 .rd-intro p {
   color: #293a3d;
-  font-size: calc(26 * var(--u));
+  font-size: min(calc(26 * var(--u)), max(13px, calc(24 * var(--u))));
   margin-bottom: calc(6 * var(--u));
   line-height: 1.3;
   letter-spacing: -0.025em;
 }
 .rd-intro h1 {
-  font-size: calc(60 * var(--u));
+  font-size: min(calc(60 * var(--u)), max(13px, calc(55 * var(--u))));
   line-height: 1.2;
   font-weight: 400;
   letter-spacing: -0.035em;
@@ -238,7 +238,7 @@
   gap: calc(10 * var(--u));
 }
 .rd-panel-title h2 {
-  font-size: calc(27 * var(--u));
+  font-size: min(calc(27 * var(--u)), max(13px, calc(25 * var(--u))));
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: -0.04em;
@@ -278,7 +278,7 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: calc(18 * var(--u));
+  font-size: min(calc(18 * var(--u)), max(13px, calc(16.5 * var(--u))));
   flex-shrink: 0;
 }
 .rd-task-filter select {
@@ -363,13 +363,13 @@
   width: 100%;
 }
 .rd-task h3 {
-  font-size: calc(21 * var(--u));
+  font-size: min(calc(21 * var(--u)), max(13px, calc(19.5 * var(--u))));
   line-height: 1.08;
   font-weight: 600;
   letter-spacing: -0.025em;
 }
 .rd-task p {
-  font-size: calc(17 * var(--u));
+  font-size: min(calc(17 * var(--u)), max(13px, calc(15.5 * var(--u))));
   line-height: 1.4;
   margin-top: calc(9 * var(--u));
   color: #4a4c4c;
@@ -405,7 +405,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: calc(17 * var(--u)) calc(24 * var(--u));
-  font-size: calc(21 * var(--u));
+  font-size: min(calc(21 * var(--u)), max(13px, calc(19.5 * var(--u))));
 }
 .rd-legend > span {
   display: inline-flex;
@@ -451,7 +451,7 @@
   background: #edf2f5;
   border-radius: calc(15 * var(--u)) calc(15 * var(--u)) calc(15 * var(--u)) 0;
   padding: calc(7 * var(--u)) calc(14 * var(--u));
-  font-size: calc(15 * var(--u));
+  font-size: min(calc(15 * var(--u)), max(13px, calc(14 * var(--u))));
   line-height: 1.45;
   white-space: nowrap;
   z-index: 1;
@@ -473,7 +473,7 @@
 }
 .rd-chart-days button {
   padding: calc(2 * var(--u));
-  font-size: calc(16 * var(--u));
+  font-size: min(calc(16 * var(--u)), max(13px, calc(14.5 * var(--u))));
   color: #6b7182;
 }
 .rd-chart-caption {
@@ -491,7 +491,7 @@
   box-shadow: 0 8px 25px #0d31311a;
   border-radius: 15px;
   padding: 14px;
-  font-size: 14px;
+  font-size: 13px;
 }
 .rd-chart-options span {
   display: block;
@@ -518,14 +518,14 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 calc(5 * var(--u)) calc(15 * var(--u));
-  font-size: calc(21 * var(--u));
+  font-size: min(calc(21 * var(--u)), max(13px, calc(19.5 * var(--u))));
 }
 .rd-progress-label > span:last-child {
   display: flex;
   align-items: center;
   gap: calc(22 * var(--u));
   color: #444a4b;
-  font-size: calc(19 * var(--u));
+  font-size: min(calc(19 * var(--u)), max(13px, calc(17.5 * var(--u))));
   font-variant-numeric: tabular-nums;
 }
 .rd-progress-label b {
@@ -576,7 +576,7 @@
   color: #697371;
 }
 .rd-filter-note {
-  font-size: 14px;
+  font-size: 13px;
   margin-top: 18px;
 }
 .rd-filter-note button {
@@ -607,19 +607,19 @@
   min-width: 0;
 }
 .rd-schedule-label {
-  font-size: calc(17 * var(--u));
+  font-size: min(calc(17 * var(--u)), max(13px, calc(15.5 * var(--u))));
   color: #4c5051;
   display: block;
   white-space: nowrap;
 }
 .rd-schedule strong {
-  font-size: calc(18 * var(--u));
+  font-size: min(calc(18 * var(--u)), max(13px, calc(16.5 * var(--u))));
   font-weight: 600;
   display: block;
   margin-top: calc(17 * var(--u));
 }
 .rd-schedule h3 {
-  font-size: calc(19 * var(--u));
+  font-size: min(calc(19 * var(--u)), max(13px, calc(17.5 * var(--u))));
   font-weight: 500;
   letter-spacing: -0.025em;
   line-height: 1.15;
@@ -637,7 +637,7 @@
   display: flex;
   align-items: center;
   gap: calc(8 * var(--u));
-  font-size: calc(20 * var(--u));
+  font-size: min(calc(20 * var(--u)), max(13px, calc(18.5 * var(--u))));
   color: #343a3a;
   margin-top: calc(11 * var(--u));
 }
@@ -650,7 +650,7 @@
   align-items: center;
   gap: calc(13 * var(--u));
   padding: 0;
-  font-size: calc(21 * var(--u));
+  font-size: min(calc(21 * var(--u)), max(13px, calc(19.5 * var(--u))));
   margin-top: calc(19 * var(--u));
 }
 .rd-text-link svg {
@@ -680,13 +680,13 @@
   margin-top: calc(3 * var(--u));
 }
 .rd-review h3 {
-  font-size: calc(20 * var(--u));
+  font-size: min(calc(20 * var(--u)), max(13px, calc(18.5 * var(--u))));
   font-weight: 500;
   letter-spacing: -0.025em;
 }
 .rd-review p {
   margin-top: calc(3 * var(--u));
-  font-size: calc(18 * var(--u));
+  font-size: min(calc(18 * var(--u)), max(13px, calc(16.5 * var(--u))));
   color: #555b5b;
   line-height: 1.3;
 }
@@ -696,7 +696,7 @@
   display: inline-flex;
   align-items: center;
   gap: calc(7 * var(--u));
-  font-size: calc(17 * var(--u));
+  font-size: min(calc(17 * var(--u)), max(13px, calc(15.5 * var(--u))));
   padding: calc(3 * var(--u)) calc(10 * var(--u));
   margin-top: calc(16 * var(--u));
 }
@@ -713,7 +713,7 @@
   color: #5b6969;
 }
 .rd-empty {
-  font-size: 15px;
+  font-size: 14px;
   color: #566366;
   line-height: 1.6;
   padding: 20px 0;
@@ -772,10 +772,10 @@
     margin-top: 12px;
   }
   .rd-intro h1 {
-    font-size: 39px;
+    font-size: 36px;
   }
   .rd-intro p {
-    font-size: 18px;
+    font-size: 16.5px;
   }
   .rd-search {
     width: 43%;
@@ -798,7 +798,7 @@
     align-items: flex-start;
   }
   .rd-brand {
-    font-size: 44px;
+    font-size: 40.5px;
   }
   .rd-brand span {
     font-size: 10px;
@@ -812,10 +812,10 @@
   .rd-profile-avatar {
     width: 38px;
     height: 38px;
-    font-size: 20px;
+    font-size: 18.5px;
   }
   .rd-profile strong {
-    font-size: 15px;
+    font-size: 14px;
   }
   .rd-profile small {
     font-size: 11px;
@@ -875,10 +875,10 @@
     padding: 20px 3px 23px;
   }
   .rd-intro h1 {
-    font-size: 36px;
+    font-size: 33px;
   }
   .rd-intro p {
-    font-size: 17px;
+    font-size: 15.5px;
     margin-bottom: 6px;
   }
   .rd-search {
@@ -912,7 +912,7 @@
     padding: 24px;
   }
   .rd-panel-title h2 {
-    font-size: 23px;
+    font-size: 21px;
   }
   .rd-icon {
     width: 44px;
@@ -928,10 +928,10 @@
     border-radius: 22px;
   }
   .rd-task h3 {
-    font-size: 16px;
+    font-size: 14.5px;
   }
   .rd-task p {
-    font-size: 14px;
+    font-size: 13px;
   }
   .rd-task-top {
     margin-bottom: 17px;
@@ -944,7 +944,7 @@
   }
   .rd-task-days button {
     height: 44px;
-    font-size: 15px;
+    font-size: 14px;
   }
   .rd-task-filter {
     max-width: 100%;
@@ -966,7 +966,7 @@
     margin: 9px auto 12px;
   }
   .rd-legend {
-    font-size: 16px;
+    font-size: 14.5px;
     gap: 12px 18px;
   }
   .rd-activity {
@@ -987,7 +987,7 @@
     min-height: 440px;
   }
   .rd-progress-label {
-    font-size: 16px;
+    font-size: 14.5px;
   }
   .rd-progress-label > span:last-child {
     font-size: 13px;
@@ -1008,7 +1008,7 @@
     padding: 20px 16px;
   }
   .rd-schedule h3 {
-    font-size: 17px;
+    font-size: 15.5px;
   }
   .rd-review-title {
     margin-top: 35px;
@@ -1018,10 +1018,10 @@
     min-height: 145px;
   }
   .rd-review h3 {
-    font-size: 18px;
+    font-size: 16.5px;
   }
   .rd-review p {
-    font-size: 16px;
+    font-size: 14.5px;
   }
   .rd-footer {
     flex-direction: column;

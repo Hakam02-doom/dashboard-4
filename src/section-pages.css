@@ -15,7 +15,7 @@
   margin-bottom: 25px;
 }
 .px-heading h2 {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: -0.035em;
@@ -51,7 +51,7 @@
   min-height: 44px;
   padding: 12px 19px;
   background: transparent;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.2;
   white-space: nowrap;
 }
@@ -79,7 +79,7 @@
   align-items: center;
   gap: 9px;
   padding: 0;
-  font-size: 15px;
+  font-size: 14px;
   text-align: left;
   background: transparent;
 }
@@ -87,7 +87,7 @@
   color: #087b80;
 }
 .px-muted {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.65;
   color: #566866;
 }
@@ -119,7 +119,7 @@
   border-radius: 50%;
   background: #071f21;
   color: white;
-  font-size: 15px;
+  font-size: 14px;
 }
 .px-status {
   display: inline-flex;
@@ -159,7 +159,7 @@
   flex-wrap: wrap;
 }
 .px-pills button {
-  font-size: 14px;
+  font-size: 13px;
   padding: 11px 17px;
   border-radius: 999px;
   border: 1px solid #d2dcda;
@@ -206,12 +206,12 @@
   gap: 14px;
 }
 .px-empty h3 {
-  font-size: 22px;
+  font-size: 20px;
   color: #183831;
   font-weight: 400;
 }
 .px-empty p {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.6;
   max-width: 34ch;
 }
@@ -228,7 +228,7 @@
   padding: 28px 22px;
 }
 .px-collections .px-heading h2 {
-  font-size: 23px;
+  font-size: 21px;
 }
 .px-collection-list {
   display: grid;
@@ -241,7 +241,7 @@
   width: 100%;
   padding: 15px 14px;
   text-align: left;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: 999px;
   background: transparent;
 }
@@ -265,14 +265,14 @@
   padding: 23px 18px;
 }
 .px-side-note h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: -0.025em;
   margin: 22px 0 12px;
 }
 .px-side-note p {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.6;
   color: #3f6156;
   margin-bottom: 24px;
@@ -375,7 +375,7 @@
   color: #ba4db4;
 }
 .px-card-title {
-  font-size: 19px;
+  font-size: 17.5px;
   line-height: 1.2;
   letter-spacing: -0.025em;
   font-weight: 500;
@@ -383,7 +383,7 @@
   overflow-wrap: anywhere;
 }
 .px-card-copy {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
   color: #4e625c;
   margin-top: 11px;
@@ -444,7 +444,7 @@
   padding: 28px 23px;
 }
 .px-library-side .px-heading h2 {
-  font-size: 23px;
+  font-size: 21px;
 }
 .px-next-card {
   border: 1px solid #d7dfdc;
@@ -464,7 +464,7 @@
   color: #546b62;
 }
 .px-next-card h3 {
-  font-size: 18px;
+  font-size: 16.5px;
   font-weight: 400;
   letter-spacing: -0.025em;
   margin: 18px 0;
@@ -486,7 +486,7 @@
   margin: 25px 0;
 }
 .px-channel-row h3 {
-  font-size: 18px;
+  font-size: 16.5px;
   font-weight: 400;
 }
 .px-channel-row p {
@@ -532,7 +532,7 @@
   flex: 1;
 }
 .px-review-choice strong {
-  font-size: 16px;
+  font-size: 14.5px;
   line-height: 1.3;
   font-weight: 500;
   display: block;
@@ -554,11 +554,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 14px;
+  font-size: 13px;
   color: #4d665b;
 }
 .px-review-paper h2 {
-  font-size: 38px;
+  font-size: 35px;
   line-height: 1.1;
   letter-spacing: -0.035em;
   font-weight: 400;
@@ -566,7 +566,7 @@
   margin: 38px 0 22px;
 }
 .px-review-paper p {
-  font-size: 17px;
+  font-size: 15.5px;
   line-height: 1.7;
   color: #52645c;
   max-width: 65ch;
@@ -594,7 +594,7 @@
   display: block;
 }
 .px-detail-facts strong {
-  font-size: 16px;
+  font-size: 14.5px;
   font-weight: 400;
   display: block;
   margin-top: 9px;
@@ -603,11 +603,11 @@
   padding: 26px 4px;
 }
 .px-review-checks h3 {
-  font-size: 21px;
+  font-size: 19.5px;
   font-weight: 400;
 }
 .px-review-checks p {
-  font-size: 14px;
+  font-size: 13px;
   color: #5d7167;
   line-height: 1.6;
   margin: 10px 0 20px;
@@ -617,7 +617,7 @@
   align-items: center;
   gap: 10px;
   color: #28735b;
-  font-size: 14px;
+  font-size: 13px;
   margin: 13px 0;
 }
 .px-actions {
@@ -657,7 +657,7 @@
   font-size: 13px;
 }
 .px-week-strip strong {
-  font-size: 30px;
+  font-size: 27.5px;
   font-weight: 400;
 }
 .px-week-strip i {
@@ -690,7 +690,7 @@
   padding-top: 16px;
 }
 .px-agenda-date strong {
-  font-size: 29px;
+  font-size: 26.5px;
   font-weight: 400;
 }
 .px-agenda-date span {
@@ -721,7 +721,7 @@
   color: #436058;
 }
 .px-agenda-event h3 {
-  font-size: 19px;
+  font-size: 17.5px;
   font-weight: 500;
   letter-spacing: -0.025em;
   line-height: 1.2;
@@ -743,7 +743,7 @@
   padding: 25px;
   min-height: 86px;
   color: #61776a;
-  font-size: 14px;
+  font-size: 13px;
   background: transparent;
 }
 .px-calendar-side {
@@ -754,7 +754,7 @@
   padding: 28px;
 }
 .px-calendar-side .px-heading h2 {
-  font-size: 23px;
+  font-size: 21px;
 }
 .px-calendar-side .px-round {
   width: 33px;
@@ -775,7 +775,7 @@
 .px-month-grid > button {
   height: 34px;
   border-radius: 50%;
-  font-size: 14px;
+  font-size: 13px;
   position: relative;
   background: transparent;
   padding: 0;
@@ -796,7 +796,7 @@
   padding: 13px 0;
 }
 .px-calendar-total strong {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
 }
 .px-calendar-total .px-status {
@@ -834,7 +834,7 @@
   flex: 1;
 }
 .px-keyword-option strong {
-  font-size: 18px;
+  font-size: 16.5px;
   line-height: 1.3;
   font-weight: 400;
   display: block;
@@ -846,7 +846,7 @@
   color: #5f7669;
 }
 .px-keyword-difficulty {
-  font-size: 24px;
+  font-size: 22px;
   font-variant-numeric: tabular-nums;
   text-align: center;
 }
@@ -857,7 +857,7 @@
   padding: 32px;
 }
 .px-keyword-plan .px-heading h2 {
-  font-size: 24px;
+  font-size: 22px;
 }
 .px-topic-paper {
   padding: 30px;
@@ -869,14 +869,14 @@
   height: 60px;
 }
 .px-topic-paper h2 {
-  font-size: 35px;
+  font-size: 32px;
   letter-spacing: -0.035em;
   line-height: 1.13;
   font-weight: 400;
   margin-top: 30px;
 }
 .px-topic-paper p {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
   color: #4e6e5d;
   margin-top: 15px;
@@ -893,12 +893,12 @@
 }
 .px-topic-measures strong {
   display: block;
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 400;
   margin: 10px 0 16px;
 }
 .px-topic-measures strong small {
-  font-size: 15px;
+  font-size: 14px;
   color: #526b60;
 }
 .px-track {
@@ -928,16 +928,16 @@
   margin: 48px 0 30px;
 }
 .px-score > strong {
-  font-size: 90px;
+  font-size: 83px;
   line-height: 1;
   font-weight: 400;
   letter-spacing: -0.04em;
 }
 .px-score > strong span {
-  font-size: 43px;
+  font-size: 39.5px;
 }
 .px-score p {
-  font-size: 17px;
+  font-size: 15.5px;
   color: #4e685b;
   margin-top: 17px;
 }
@@ -949,7 +949,7 @@
 }
 .px-baseline-facts strong {
   display: block;
-  font-size: 30px;
+  font-size: 27.5px;
   font-weight: 400;
 }
 .px-baseline-facts span {
@@ -974,7 +974,7 @@
   padding: 23px;
 }
 .px-prompt h3 {
-  font-size: 18px;
+  font-size: 16.5px;
   font-weight: 400;
   line-height: 1.25;
   flex: 1;
@@ -995,13 +995,13 @@
   padding: 35px;
 }
 .px-visibility-next h2 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 400;
   letter-spacing: -0.03em;
   margin: 20px 0 10px;
 }
 .px-visibility-next p {
-  font-size: 15px;
+  font-size: 14px;
   color: #577163;
 }
 .px-visibility-next > div:last-child {
@@ -1048,13 +1048,13 @@
   margin-bottom: 30px;
 }
 .rd-overlays dialog > h2 {
-  font-size: 31px;
+  font-size: 28.5px;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: -0.03em;
 }
 .rd-overlays .dialog-description {
-  font-size: 16px;
+  font-size: 14.5px;
   color: #506b5d;
   line-height: 1.7;
   margin: 20px 0;
@@ -1068,7 +1068,7 @@
   gap: 22px;
   border-bottom: 1px solid #e0e7e2;
   padding: 16px 0;
-  font-size: 14px;
+  font-size: 13px;
 }
 .rd-overlays dt {
   color: #5d7264;
@@ -1096,7 +1096,7 @@
 }
 .px-composer label {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   color: #244735;
   margin: 17px 0;
 }
@@ -1134,7 +1134,7 @@
   background: #071f21;
   border-radius: 20px;
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   box-shadow: 0 12px 32px #17392b25;
 }
 .rd-overlays .toast button {
@@ -1158,7 +1158,7 @@
     min-height: 270px;
   }
   .px-heading h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 @media (max-width: 1200px) {
@@ -1208,7 +1208,7 @@
     padding: 28px;
   }
   .px-review-paper h2 {
-    font-size: 32px;
+    font-size: 29.5px;
   }
   .px-review-choice {
     gap: 10px;
@@ -1224,13 +1224,13 @@
     display: none;
   }
   .px-keyword-option strong {
-    font-size: 16px;
+    font-size: 14.5px;
   }
   .px-topic-paper h2 {
-    font-size: 30px;
+    font-size: 27.5px;
   }
   .px-heading h2 {
-    font-size: 23px;
+    font-size: 21px;
   }
 }
 @media (max-width: 950px) {
@@ -1306,7 +1306,7 @@
     margin-bottom: 23px;
   }
   .px-heading h2 {
-    font-size: 23px;
+    font-size: 21px;
   }
   .px-round {
     width: 40px;
@@ -1336,10 +1336,10 @@
     border-radius: 27px;
   }
   .px-card-title {
-    font-size: 22px;
+    font-size: 20px;
   }
   .px-card-copy {
-    font-size: 15px;
+    font-size: 14px;
   }
   .px-card-foot {
     font-size: 13px;
@@ -1368,7 +1368,7 @@
     justify-self: start;
   }
   .px-content-list .px-card-title {
-    font-size: 18px;
+    font-size: 16.5px;
   }
   .px-content-list .px-card-copy {
     font-size: 13px;
@@ -1390,11 +1390,11 @@
     padding: 24px;
   }
   .px-review-paper h2 {
-    font-size: 29px;
+    font-size: 26.5px;
     margin: 29px 0 20px;
   }
   .px-review-paper p {
-    font-size: 15px;
+    font-size: 14px;
   }
   .px-keyword-chip {
     font-size: 12px;
@@ -1410,7 +1410,7 @@
     gap: 15px;
   }
   .px-detail-facts strong {
-    font-size: 14px;
+    font-size: 13px;
     margin: 0;
   }
   .px-actions {
@@ -1436,7 +1436,7 @@
     font-size: 11px;
   }
   .px-week-strip strong {
-    font-size: 23px;
+    font-size: 21px;
   }
   .px-agenda .px-heading {
     flex-wrap: wrap;
@@ -1450,7 +1450,7 @@
     margin-bottom: 11px;
   }
   .px-agenda-date strong {
-    font-size: 24px;
+    font-size: 22px;
   }
   .px-agenda-date span {
     font-size: 11px;
@@ -1460,7 +1460,7 @@
     border-radius: 23px;
   }
   .px-agenda-event h3 {
-    font-size: 17px;
+    font-size: 15.5px;
   }
   .px-calendar-empty {
     font-size: 13px;
@@ -1489,7 +1489,7 @@
     padding: 18px 15px;
   }
   .px-keyword-difficulty {
-    font-size: 21px;
+    font-size: 19.5px;
   }
   .px-keyword-option > svg {
     display: none;
@@ -1498,7 +1498,7 @@
     padding: 25px;
   }
   .px-topic-paper h2 {
-    font-size: 32px;
+    font-size: 29.5px;
   }
   .px-topic-measures {
     gap: 18px;
@@ -1507,7 +1507,7 @@
     font-size: 12px;
   }
   .px-topic-measures strong {
-    font-size: 31px;
+    font-size: 28.5px;
   }
   .px-visibility-baseline {
     display: block;
@@ -1516,7 +1516,7 @@
     margin: 30px 0;
   }
   .px-score strong {
-    font-size: 80px;
+    font-size: 73.5px;
   }
   .px-baseline-facts {
     margin-top: 30px;
@@ -1527,7 +1527,7 @@
     flex-wrap: wrap;
   }
   .px-prompt h3 {
-    font-size: 17px;
+    font-size: 15.5px;
   }
   .px-prompt > span {
     margin-left: 34px;
@@ -1543,7 +1543,7 @@
     gap: 15px;
   }
   .px-visibility-next h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
   .rd-overlays dialog {
     padding: 24px;
@@ -1556,7 +1556,7 @@
     width: 100%;
   }
   .px-composer .px-heading h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
   .px-form-pair {
     grid-template-columns: 1fr;

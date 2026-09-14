@@ -16,17 +16,17 @@ colors:
 typography:
   section-title:
     fontFamily: 'DM Sans, sans-serif'
-    fontSize: '25px'
+    fontSize: '23px'
     fontWeight: 400
     letterSpacing: '-0.035em'
   content-title:
     fontFamily: 'DM Sans, sans-serif'
-    fontSize: '19px'
+    fontSize: '17.5px'
     fontWeight: 500
     lineHeight: 1.2
   body:
     fontFamily: 'DM Sans, sans-serif'
-    fontSize: '15px'
+    fontSize: '14px'
     lineHeight: 1.65
 rounded:
   panel: '40px'
@@ -50,7 +50,7 @@ Keep the home's cool canvas and white panels. Pastel peach, blue, pink and mint 
 
 ## Typography
 
-DM Sans carries every page. Section titles are regular and large, content titles are medium, descriptive text is readable at 14–17px, and metadata is secondary. Mobile content cards use 22px titles. Never restore the old 9–11px document thumbnail or calendar microtype as ordinary content text.
+DM Sans carries every page. Section titles are regular and large, content titles are medium, descriptive text is readable at 14–17px, and metadata is secondary. Mobile content cards use 20px titles after the user-requested subtle typography reduction. Small metadata and form inputs retain their readable sizes. Never restore the old 9–11px document thumbnail or calendar microtype as ordinary content text.
 
 ## Layout
 

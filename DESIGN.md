@@ -16,18 +16,18 @@ colors:
 typography:
   headline:
     fontFamily: "DM Sans, sans-serif"
-    fontSize: "clamp(36px, 3.26vw, 60px)"
+    fontSize: "clamp(33px, 2.999vw, 55px)"
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: "-0.035em"
   title:
     fontFamily: "DM Sans, sans-serif"
-    fontSize: "27px"
+    fontSize: "25px"
     fontWeight: 400
     letterSpacing: "-0.025em"
   body:
     fontFamily: "DM Sans, sans-serif"
-    fontSize: "15px"
+    fontSize: "14px"
     fontWeight: 400
     lineHeight: 1.6
 rounded:
@@ -65,7 +65,9 @@ Dark teal anchors selected pills, circular navigation and primary actions. White
 
 ## Typography
 
-Use DM Sans throughout. Headings are light and tightly tracked, with medium weight reserved for names and emphasis. Operational body text generally uses 14–16px; labels use 12–14px. The headline drops to 36px at 1200px and 34px at 700px. Workspace panel titles drop from 27px to 24px on mobile. Preserve readable text in dense tables rather than scaling the entire page down.
+The user requested a subtle size reduction: headings, content titles and regular text above 13px are approximately 8% smaller, rounded to half-pixel steps. Preserve small metadata and form inputs. Home type that scales with `--u` preserves already-small text and floors reductions at 13px; the layout scale, spacing, weights and line heights are unchanged.
+
+Use DM Sans throughout. Headings are light and tightly tracked, with medium weight reserved for names and emphasis. Operational body text generally uses 14–16px; labels use 12–14px. The headline drops to 33px at 1200px and 31.5px at 700px. Workspace panel titles drop from 25px to 22px on mobile. Preserve readable text in dense tables rather than scaling the entire page down.
 
 ## Layout
 
