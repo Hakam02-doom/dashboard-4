@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.impeccable/review/
+.vercel/
+.env
+.env.*
+.impeccable/section-rebuild/
+.DS_Store
