@@ -1,0 +1,760 @@
+/* Dashboard 4 uses fixed operational sizing; viewport width adds room, not zoom. */
+:root {
+  font-size: 14px;
+}
+.rd-shell {
+  --u: 0.7px;
+  font-size: 14px;
+}
+.rd-header {
+  height: 82px;
+  padding: 24px 24px 0;
+}
+.rd-brand {
+  font-size: 32px;
+  letter-spacing: -0.055em;
+}
+.rd-brand span {
+  font-size: 9px;
+}
+.rd-period {
+  left: 32%;
+  gap: 6px;
+}
+.rd-period button {
+  height: 36px;
+  min-width: 86px;
+  padding: 0 13px;
+  font-size: 12px;
+}
+.rd-header-actions > .rd-icon,
+.rd-profile-avatar {
+  width: 36px;
+  height: 36px;
+}
+.rd-profile-avatar {
+  font-size: 18px;
+}
+.rd-profile strong {
+  font-size: 14px;
+}
+.rd-profile small {
+  font-size: 12px;
+}
+.rd-icon {
+  width: 34px;
+  height: 34px;
+}
+.rd-icon svg {
+  width: 18px;
+  height: 18px;
+}
+.rd-icon i {
+  width: 6px;
+  height: 6px;
+  top: 8px;
+  right: 9px;
+}
+.rd-rail {
+  left: 22px;
+  top: 99px;
+  gap: 5px;
+}
+.rd-rail .rd-icon {
+  width: 38px;
+  height: 38px;
+}
+.rd-main {
+  margin: 0 24px 0 82px;
+}
+.rd-intro {
+  height: 94px;
+  min-height: 0;
+  padding-top: 13px;
+  gap: 24px;
+}
+.rd-intro p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.rd-intro h1 {
+  font-size: 30px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+.rd-search {
+  height: 42px;
+  margin-top: 9px;
+  padding: 0 15px;
+  gap: 11px;
+  width: 39%;
+}
+.rd-search > svg {
+  width: 23px;
+  height: 23px;
+}
+.rd-search input {
+  font-size: 14px;
+}
+.rd-panel {
+  border-radius: 28px;
+}
+.rd-panel-title h2 {
+  font-size: 18px;
+  letter-spacing: -0.025em;
+}
+.rd-tasks {
+  padding: 22px 18px;
+  margin-right: 12px;
+}
+.rd-task-days {
+  gap: 8px;
+  margin: 15px 0;
+}
+.rd-task-days button {
+  height: 36px;
+  padding: 0 16px;
+  font-size: 13px;
+}
+.rd-task-filter {
+  height: 44px;
+  padding: 0 11px;
+  margin-bottom: 14px;
+  gap: 9px;
+}
+.rd-task-filter > span {
+  width: 26px;
+  height: 26px;
+  font-size: 13px;
+}
+.rd-task-filter select {
+  font-size: 14px;
+}
+.rd-task {
+  padding: 14px;
+  border-radius: 21px;
+  min-height: 130px;
+}
+.rd-task-top {
+  margin-bottom: 12px;
+}
+.rd-task-symbol svg {
+  width: 24px;
+  height: 24px;
+}
+.rd-task-top button svg {
+  width: 22px;
+  height: 22px;
+}
+.rd-task h3 {
+  font-size: 14px;
+  line-height: 1.2;
+}
+.rd-task p {
+  font-size: 13px;
+  line-height: 1.4;
+  margin-top: 7px;
+}
+.rd-overview,
+.rd-activity {
+  padding: 22px 20px;
+  height: 294px;
+}
+.rd-donut {
+  width: 154px;
+  height: 154px;
+  margin: 9px auto;
+}
+.rd-legend {
+  font-size: 14px;
+  gap: 9px 14px;
+}
+.rd-legend > span {
+  gap: 6px;
+}
+.rd-dot {
+  width: 10px;
+  height: 10px;
+}
+.rd-chart {
+  margin-top: 6px;
+}
+.rd-chart > svg {
+  height: 196px;
+}
+.rd-chart-tip {
+  top: 30px;
+  font-size: 11px;
+  padding: 6px 9px;
+}
+.rd-chart-days button {
+  font-size: 12px;
+}
+.rd-chart-caption {
+  font-size: 10px;
+  margin-top: 3px;
+}
+.rd-pipeline {
+  padding: 22px 20px;
+  min-height: 346px;
+}
+.rd-progress-list {
+  margin-top: 20px;
+  gap: 20px;
+}
+.rd-progress-label {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.rd-progress-label > span:last-child {
+  font-size: 13px;
+  gap: 14px;
+}
+.rd-progress-track {
+  height: 20px;
+}
+.rd-source-note {
+  font-size: 11px;
+  margin-top: 18px;
+}
+.rd-right {
+  padding: 22px 24px;
+  min-height: 650px;
+}
+.rd-schedule-list {
+  margin-top: 14px;
+}
+.rd-schedule {
+  min-height: 91px;
+  border-radius: 23px;
+  padding: 16px 13px;
+  gap: 8px;
+}
+.rd-schedule-label {
+  font-size: 12px;
+}
+.rd-schedule strong {
+  font-size: 13px;
+  margin-top: 12px;
+}
+.rd-schedule h3 {
+  font-size: 14px;
+}
+.rd-channel {
+  font-size: 13px;
+  gap: 6px;
+  margin-top: 8px;
+}
+.rd-channel svg {
+  width: 17px;
+  height: 17px;
+}
+.rd-text-link {
+  font-size: 14px;
+  margin-top: 14px;
+  gap: 10px;
+}
+.rd-review-title {
+  margin-top: 29px;
+}
+.rd-review-list {
+  margin-top: 14px;
+}
+.rd-review {
+  padding: 16px 13px;
+  border-radius: 23px;
+  min-height: 116px;
+  gap: 10px;
+}
+.rd-review img {
+  width: 36px;
+  height: 36px;
+}
+.rd-review h3 {
+  font-size: 14px;
+}
+.rd-review p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+.rd-review button {
+  font-size: 12px;
+  margin-top: 11px;
+  padding: 4px 10px;
+}
+.rd-footer {
+  font-size: 11px;
+  padding-top: 18px;
+}
+.rd-section-create {
+  padding: 11px 17px;
+  font-size: 13px;
+  margin-top: 8px;
+  min-height: 38px;
+}
+.px-panel,
+.ws-panel {
+  padding: 22px;
+  border-radius: 28px;
+}
+.px-heading {
+  margin-bottom: 18px;
+}
+.px-heading h2,
+.px-collections .px-heading h2,
+.px-calendar-side .px-heading h2,
+.ws-panel h2 {
+  font-size: 18px;
+}
+.px-heading > svg {
+  width: 20px;
+  height: 20px;
+}
+.px-round,
+.rd-shell .px-round {
+  width: 36px;
+  height: 36px;
+}
+.px-round svg {
+  width: 18px;
+  height: 18px;
+}
+.px-button,
+.rd-shell .px-button {
+  min-height: 36px;
+  padding: 9px 14px;
+  font-size: 13px;
+  gap: 7px;
+}
+.px-collection-list button {
+  padding: 10px 12px;
+}
+.px-search {
+  height: 40px;
+  margin-bottom: 16px;
+}
+.px-library-layout {
+  grid-template-columns: 200px minmax(0, 1fr) 250px;
+  gap: 12px;
+}
+.px-library-main,
+.px-collections {
+  padding: 22px;
+}
+.px-content-card {
+  padding: 18px;
+  min-height: 192px;
+  border-radius: 23px;
+}
+.px-card-top {
+  margin-bottom: 16px;
+}
+.px-card-top svg {
+  width: 21px;
+  height: 21px;
+}
+.px-card-title {
+  font-size: 15px;
+  line-height: 1.3;
+}
+.px-card-copy {
+  font-size: 13px;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+.px-card-foot {
+  padding: 16px 0 10px;
+}
+.px-toolbar {
+  margin-bottom: 16px;
+}
+.px-side-note {
+  padding: 18px;
+  margin-top: 22px;
+  border-radius: 22px;
+}
+.px-side-note h3 {
+  font-size: 17px;
+  margin-top: 16px;
+}
+.px-review-paper {
+  padding: 26px;
+  border-radius: 24px;
+}
+.px-review-paper h2 {
+  font-size: 25px;
+  margin: 24px 0 16px;
+}
+.px-review-paper p {
+  font-size: 14px;
+}
+.px-agenda-event {
+  min-height: 80px;
+  padding: 17px;
+  border-radius: 22px;
+}
+.px-agenda-event h3 {
+  font-size: 15px;
+}
+.px-week-strip {
+  margin: 18px 0;
+}
+.px-week-strip button {
+  padding: 12px 5px 9px;
+  gap: 7px;
+  border-radius: 20px;
+}
+.px-week-strip strong {
+  font-size: 21px;
+}
+.px-score > strong,
+.px-score strong {
+  font-size: 56px;
+}
+.px-prompt {
+  padding: 17px;
+  border-radius: 21px;
+}
+.px-prompt h3 {
+  font-size: 15px;
+}
+.px-visibility-next {
+  padding: 24px;
+}
+.px-visibility-next h2 {
+  font-size: 22px;
+}
+.ws-panel h3 {
+  font-size: 16px;
+}
+.ws-lead {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.ws-setup-row {
+  padding: 15px 0;
+}
+.ws-connection {
+  padding: 18px 0;
+}
+.ws-workspace {
+  margin: 22px 0;
+}
+.ws-symbol {
+  width: 36px;
+  height: 36px;
+}
+.rd-overlays dialog {
+  width: min(560px, calc(100vw - 32px));
+  padding: 24px;
+  border-radius: 26px;
+}
+.rd-overlays dialog > h2 {
+  font-size: 24px;
+}
+.rd-overlays .dialog-description {
+  font-size: 14px;
+}
+@media (min-width: 1400px) {
+  .px-content-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 1200px) {
+  .rd-period {
+    left: 26%;
+  }
+  .rd-header-actions > .rd-icon:nth-child(1),
+  .rd-header-actions > .rd-icon:nth-child(3) {
+    display: none;
+  }
+  .px-library-layout {
+    grid-template-columns: 190px minmax(0, 1fr);
+  }
+  .px-library-side {
+    grid-column: 1/-1;
+  }
+  .rd-intro h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 950px) {
+  .rd-header-actions > .rd-icon {
+    display: none;
+  }
+  .rd-profile small {
+    display: none;
+  }
+  .rd-period {
+    left: 23%;
+  }
+  .rd-period button {
+    min-width: 76px;
+    padding: 0 10px;
+  }
+  .px-library-layout {
+    grid-template-columns: 1fr;
+  }
+  .px-library-side {
+    grid-column: auto;
+  }
+}
+@media (max-width: 700px) {
+  .rd-shell {
+    --u: 0.7px;
+    padding-bottom: 80px;
+  }
+  .rd-header {
+    height: 122px;
+    padding: 20px 18px 0;
+  }
+  .rd-brand {
+    font-size: 30px;
+  }
+  .rd-brand span {
+    font-size: 9px;
+  }
+  .rd-profile-avatar {
+    width: 32px;
+    height: 32px;
+  }
+  .rd-profile strong {
+    font-size: 13px;
+  }
+  .rd-profile small {
+    display: block;
+    font-size: 10px;
+  }
+  .rd-period {
+    position: static;
+    width: 100%;
+    margin-top: 19px;
+    padding-bottom: 0;
+    gap: 6px;
+  }
+  .rd-period button {
+    height: 36px;
+    min-width: 0;
+    flex: 1;
+    font-size: 12px;
+    padding: 0 9px;
+  }
+  .rd-main {
+    margin: 0 14px;
+  }
+  .rd-intro {
+    height: auto;
+    padding: 16px 2px 20px;
+    display: block;
+  }
+  .rd-intro p {
+    font-size: 13px;
+  }
+  .rd-intro h1 {
+    font-size: 26px;
+  }
+  .rd-search {
+    width: 100%;
+    margin-top: 16px;
+    height: 44px;
+    padding: 0 14px;
+    gap: 10px;
+  }
+  .rd-search input {
+    font-size: 14px;
+  }
+  .rd-rail {
+    left: 0;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    height: 66px;
+    padding: 9px 12px;
+    gap: 5px;
+  }
+  .rd-rail .rd-icon {
+    width: 44px;
+    height: 44px;
+  }
+  .rd-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .rd-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .rd-panel {
+    border-radius: 25px;
+  }
+  .rd-panel-title h2 {
+    font-size: 18px;
+  }
+  .rd-tasks {
+    padding: 20px;
+    margin-right: 0;
+  }
+  .rd-task-days button {
+    height: 40px;
+  }
+  .rd-task-filter {
+    height: 44px;
+  }
+  .rd-task-list {
+    gap: 8px;
+  }
+  .rd-task {
+    padding: 13px;
+    min-height: 152px;
+    border-radius: 19px;
+  }
+  .rd-task h3 {
+    font-size: 14px;
+  }
+  .rd-task p {
+    font-size: 13px;
+  }
+  .rd-task-top button {
+    min-width: 30px;
+    min-height: 30px;
+  }
+  .rd-overview {
+    height: 298px;
+    padding: 20px;
+  }
+  .rd-donut {
+    width: 160px;
+    height: 160px;
+  }
+  .rd-legend {
+    font-size: 13px;
+  }
+  .rd-activity {
+    height: 302px;
+    padding: 20px;
+  }
+  .rd-chart > svg {
+    height: 196px;
+  }
+  .rd-pipeline {
+    padding: 20px;
+    min-height: 350px;
+  }
+  .rd-source-note {
+    font-size: 11px;
+  }
+  .rd-progress-label {
+    font-size: 14px;
+  }
+  .rd-progress-label > span:last-child {
+    font-size: 12px;
+    gap: 9px;
+  }
+  .rd-right {
+    padding: 20px;
+    min-height: 0;
+  }
+  .rd-review {
+    min-height: 110px;
+  }
+  .rd-footer {
+    font-size: 10px;
+  }
+  .px-panel,
+  .ws-panel,
+  .px-library-main,
+  .px-collections,
+  .px-calendar-side .px-panel {
+    padding: 19px;
+    border-radius: 25px;
+  }
+  .px-heading h2,
+  .px-collections .px-heading h2,
+  .px-calendar-side .px-heading h2,
+  .ws-panel h2 {
+    font-size: 18px;
+  }
+  .px-heading {
+    margin-bottom: 17px;
+  }
+  .px-round,
+  .rd-shell .px-round,
+  .px-calendar-side .px-round {
+    width: 44px;
+    height: 44px;
+  }
+  .px-button,
+  .rd-shell .px-button {
+    min-height: 44px;
+  }
+  .px-collection-list button {
+    padding: 11px 12px;
+    min-height: 44px;
+  }
+  .px-content-card {
+    padding: 18px;
+    min-height: 195px;
+    border-radius: 22px;
+  }
+  .px-card-title {
+    font-size: 16px;
+  }
+  .px-card-top {
+    margin-bottom: 16px;
+  }
+  .px-card-copy {
+    font-size: 13px;
+  }
+  .px-card-foot {
+    padding-top: 17px;
+  }
+  .px-review-paper {
+    padding: 20px;
+  }
+  .px-review-paper h2 {
+    font-size: 23px;
+  }
+  .px-review-paper p {
+    font-size: 14px;
+  }
+  .px-review-paper .px-keyword-chip {
+    max-width: 100%;
+    white-space: normal;
+  }
+  .px-agenda-event {
+    padding: 15px;
+    min-height: 80px;
+  }
+  .px-agenda-event h3 {
+    font-size: 15px;
+  }
+  .px-calendar-layout .px-week-strip button {
+    min-height: 72px;
+  }
+  .px-week-strip strong {
+    font-size: 20px;
+  }
+  .px-score > strong,
+  .px-score strong {
+    font-size: 48px;
+  }
+  .px-visibility-next {
+    padding: 20px;
+  }
+  .px-visibility-next h2 {
+    font-size: 20px;
+  }
+  .rd-overlays dialog {
+    padding: 22px;
+  }
+  .rd-overlays input,
+  .rd-overlays select,
+  .rd-overlays textarea {
+    font-size: 16px;
+    min-height: 44px;
+  }
+  .rd-mobile-menu button {
+    min-height: 44px;
+  }
+}
+@media(max-width:700px){.px-toolbar > div:not(.px-pills) > button:not(.px-round){min-width:44px;min-height:44px}.px-toolbar .px-round{width:44px;height:44px}}

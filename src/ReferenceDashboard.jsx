@@ -154,6 +154,7 @@ function ActivityChart({ range }) {
         </div>
         <svg
           viewBox="0 0 360 290"
+          preserveAspectRatio="none"
           role="img"
           aria-label="Illustrative SEO and social content activity. Select a day below to inspect its values."
         >

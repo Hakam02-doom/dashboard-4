@@ -16,13 +16,13 @@ colors:
 typography:
   headline:
     fontFamily: "DM Sans, sans-serif"
-    fontSize: "clamp(33px, 2.999vw, 55px)"
+    fontSize: "30px"
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: "-0.035em"
   title:
     fontFamily: "DM Sans, sans-serif"
-    fontSize: "25px"
+    fontSize: "18px"
     fontWeight: 400
     letterSpacing: "-0.025em"
   body:
@@ -31,20 +31,20 @@ typography:
     fontWeight: 400
     lineHeight: 1.6
 rounded:
-  panel: "36px"
-  panel-mobile: "28px"
+  panel: "28px"
+  panel-mobile: "25px"
   pill: "999px"
   circle: "50%"
 spacing:
   gap: "18px"
-  panel: "36px"
-  panel-mobile: "24px"
+  panel: "22px"
+  panel-mobile: "19px"
 components:
   button-primary:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.surface}"
     rounded: "{rounded.pill}"
-    padding: "17px 25px"
+    padding: "10px 16px"
   panel:
     backgroundColor: "{colors.surface}"
     rounded: "{rounded.panel}"
@@ -65,15 +65,15 @@ Dark teal anchors selected pills, circular navigation and primary actions. White
 
 ## Typography
 
-The user requested a subtle size reduction: headings, content titles and regular text above 13px are approximately 8% smaller, rounded to half-pixel steps. Preserve small metadata and form inputs. Home type that scales with `--u` preserves already-small text and floors reductions at 13px; the layout scale, spacing, weights and line heights are unchanged.
+The user requested a more compact interface after the first font-only reduction still looked zoomed. `src/compact-layout.css`, imported last, is the authority for final density. Use actual font, spacing and component dimensions rather than CSS zoom or transforms.
 
-Use DM Sans throughout. Headings are light and tightly tracked, with medium weight reserved for names and emphasis. Operational body text generally uses 14–16px; labels use 12–14px. The headline drops to 33px at 1200px and 31.5px at 700px. Workspace panel titles drop from 25px to 22px on mobile. Preserve readable text in dense tables rather than scaling the entire page down.
+Use DM Sans throughout. Page headings are 30px on desktop, 28px below 1200px and 26px on mobile. Panel titles are 18px; content card titles are 15px desktop and 16px mobile. Body text is 13–14px and metadata generally 12px. Keep mobile form inputs at 16px. Preserve hierarchy through weight and spacing.
 
 ## Layout
 
-All 12 destinations render inside one `ReferenceDashboard` shell: shared header, shortcut pills, navigation rail and introductory area. Operational content remains inside the scoped `.panze-ui` boundary. The home’s geometry uses `--u: clamp(0.72px, 0.0543478261vw, 1.18px)`; its desktop grid proportions are 356:888:440, with main margins of 116u left and 26u right. Operational panels use an 18px gap; workspace two-column layouts use a 1.6:1 split with a 300px minimum secondary column.
+All 12 destinations render inside one `ReferenceDashboard` shell. Operational content stays inside `.panze-ui`. The home uses a fixed `--u: 0.7px` plus explicit readable text sizes; do not restore viewport-driven enlargement. Desktop header height is 82px and the introduction is 94px. Main margins are 82px left and 24px right. Panel padding is generally 22px, with 18px inside content cards.
 
-At 1200px operational padding tightens. At 1150px the home becomes two columns with a 255px task column. At 1000px workspace, library and calendar layouts stack; summary cards retain two columns. At 700px the home stacks, main margins become 16px, the rail becomes a fixed 67px bottom bar, and the More menu exposes the remaining destinations. Reserve 82px below content. Tables scroll within their own wrappers; filters wrap and search takes a full row. Body minimum width is 360px. Above 2172px the shell caps at 2300px and centers.
+The home retains its original three-column proportions and stacks responsively. Library columns are 200px, flexible content and 250px; content uses three cards per row from 1400px and two below. At 1200px the library has two main columns; at 950px it stacks. At 700px principal panels use one column, page headings become 26px, panel padding is 19–20px, and the fixed bottom rail preserves 44px navigation targets. Mobile actions and form fields retain 44px minimum heights. Tables scroll inside their wrappers; filters wrap. Body minimum width remains 360px.
 
 ## Elevation & Depth
 
@@ -81,15 +81,15 @@ Panels rely on white and pastel surfaces, spacing and occasional thin rules. Kee
 
 ## Shapes
 
-Large soft panel corners define the system: home panels use 52u and become 30px on mobile; operational panels use 36px and become 28px. Buttons and status chips are pills. Icon controls and avatars are true circles. Keep small internal rows and fields quieter, with 13–20px corners where already implemented.
+Large soft panel corners define the system: panels use 28px and become 25px on mobile; content cards use 23px. Buttons and status chips are pills. Icon controls and avatars are true circles. Keep small internal rows and fields quieter, with 13–20px corners where already implemented.
 
 ## Components
 
-Primary actions pair a dark teal pill with a clear text label and a small line icon. Desktop rail buttons are white circles (54u), with the active item filled dark teal; mobile circles are 44px. Desktop tooltips name icon destinations, while the mobile More menu uses text labels.
+Primary actions pair a dark teal pill with a clear text label and a small line icon. Desktop rail buttons are white circles (38px), with the active item filled dark teal; mobile circles are 44px. Desktop tooltips name icon destinations, while the mobile More menu uses text labels.
 
-Search is a thin outlined pill with a transparent input; operational search height is 46px. Native form fields use 13px corners and a 46px minimum height. Keyboard focus uses a 2px teal outline offset by 4px. Status chips use pastel fills and explicit text. Disabled controls use 0.45 opacity. Reduced-motion preferences disable transitions and animations.
+Search is a thin outlined pill with a transparent input; desktop search height is 42px. Native form fields use 13px corners and a 46px minimum height. Keyboard focus uses a 2px teal outline offset by 4px. Status chips use pastel fills and explicit text. Disabled controls use 0.45 opacity. Reduced-motion preferences disable transitions and animations.
 
-Shared visual sources are `src/reference-dashboard.css` and `src/workspace.css`; routing and operational views are connected in `src/main.jsx`. Preserve hash navigation and the same shell when adding a section.
+Shared visual sources are `src/reference-dashboard.css`, `src/section-shell.css`, `src/section-pages.css` and the final density overrides in `src/compact-layout.css`; routing and operational views are connected in `src/main.jsx`. Preserve hash navigation and the same shell when adding a section.
 
 ## Do's and Don'ts
 

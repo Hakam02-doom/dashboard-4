@@ -43,21 +43,29 @@
         "value": "none",
         "purpose": "Disable transitions and animations when prefers-reduced-motion is reduce."
       }
-    ]
+    ],
+    "density": {
+      "source": "src/compact-layout.css",
+      "pageHeading": "30px desktop, 28px tablet, 26px mobile",
+      "panelHeading": "18px",
+      "panelPadding": "22px desktop, 19px mobile",
+      "mobileTarget": "44px",
+      "scale": "Fixed dimensions; no viewport enlargement or CSS zoom"
+    }
   },
   "components": [
     {
       "name": "Primary action",
       "kind": "button",
       "html": "<button class=\"ds-primary\">Create content</button>",
-      "css": ".ds-primary{font-family:\"DM Sans\",sans-serif;background:#071f21;color:white;border:0;border-radius:999px;padding:17px 25px;font-size:14.5px;cursor:pointer}.ds-primary:hover{color:#c7e5e4}.ds-primary:focus-visible{outline:2px solid #087b80;outline-offset:4px;}",
+      "css": ".ds-primary{font-family:\"DM Sans\",sans-serif;background:#071f21;color:white;border:0;border-radius:999px;padding:10px 16px;font-size:13px;cursor:pointer}.ds-primary:hover{color:#c7e5e4}.ds-primary:focus-visible{outline:2px solid #087b80;outline-offset:4px;}",
       "refersTo": "button-primary"
     },
     {
       "name": "Search",
       "kind": "input",
       "html": "<input class=\"ds-search\" aria-label=\"Search content\" placeholder=\"Search content\">",
-      "css": ".ds-search{font-family:\"DM Sans\",sans-serif;background:transparent;border:1px solid #ccd5d5;border-radius:999px;height:46px;padding:0 16px;color:#233638;font-size:13px}.ds-search:hover{border-color:#087b80}.ds-search:focus-visible{outline:2px solid #087b80;outline-offset:4px;}"
+      "css": ".ds-search{font-family:\"DM Sans\",sans-serif;background:transparent;border:1px solid #ccd5d5;border-radius:999px;height:42px;padding:0 16px;color:#233638;font-size:13px}.ds-search:hover{border-color:#087b80}.ds-search:focus-visible{outline:2px solid #087b80;outline-offset:4px;}"
     },
     {
       "name": "Active navigation",
@@ -75,7 +83,7 @@
       "name": "Workspace panel",
       "kind": "card",
       "html": "<article class=\"ds-panel\"><h2>Workspace</h2><p>LunchLink content and settings.</p></article>",
-      "css": ".ds-panel{font-family:\"DM Sans\",sans-serif;background:white;color:#090b0c;border-radius:36px;padding:36px}.ds-panel h2{font-size:25px;font-weight:400;letter-spacing:-.025em;margin:0}.ds-panel p{font-size:14px;line-height:1.6;color:#596968;margin:12px 0 0}",
+      "css": ".ds-panel{font-family:\"DM Sans\",sans-serif;background:white;color:#090b0c;border-radius:28px;padding:22px}.ds-panel h2{font-size:18px;font-weight:400;letter-spacing:-.025em;margin:0}.ds-panel p{font-size:14px;line-height:1.6;color:#596968;margin:12px 0 0}",
       "refersTo": "panel"
     }
   ],

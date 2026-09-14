@@ -16,12 +16,12 @@ colors:
 typography:
   section-title:
     fontFamily: 'DM Sans, sans-serif'
-    fontSize: '23px'
+    fontSize: '18px'
     fontWeight: 400
     letterSpacing: '-0.035em'
   content-title:
     fontFamily: 'DM Sans, sans-serif'
-    fontSize: '17.5px'
+    fontSize: '15px'
     fontWeight: 500
     lineHeight: 1.2
   body:
@@ -29,20 +29,20 @@ typography:
     fontSize: '14px'
     lineHeight: 1.65
 rounded:
-  panel: '40px'
-  content: '30px'
-  mobile-panel: '30px'
+  panel: '28px'
+  content: '23px'
+  mobile-panel: '25px'
   control: '999px'
 spacing:
-  panel: '30px'
-  content: '23px'
+  panel: '22px'
+  content: '18px'
   column: '16px'
   item: '10px'
 ---
 
 ## Overview
 
-This section system extends the approved home without changing its component or stylesheet. It replaces the prior operational components completely. Runtime entry `main.jsx` imports `SectionPages.jsx`, `section-shell.css` and `section-pages.css`; it no longer imports ContentSections, ResearchSections, styles.css, sections.css or workspace.css.
+This section system extends the approved home without changing its component or stylesheet. It replaces the prior operational components completely. Runtime entry `main.jsx` imports `SectionPages.jsx`, `section-shell.css` and `section-pages.css` and `compact-layout.css`; it no longer imports ContentSections, ResearchSections, styles.css, sections.css or workspace.css.
 
 ## Colors
 
@@ -50,11 +50,11 @@ Keep the home's cool canvas and white panels. Pastel peach, blue, pink and mint 
 
 ## Typography
 
-DM Sans carries every page. Section titles are regular and large, content titles are medium, descriptive text is readable at 14–17px, and metadata is secondary. Mobile content cards use 20px titles after the user-requested subtle typography reduction. Small metadata and form inputs retain their readable sizes. Never restore the old 9–11px document thumbnail or calendar microtype as ordinary content text.
+DM Sans carries every page. Final density comes from `compact-layout.css`, imported last. Page headings are 30px desktop, 28px tablet and 26px mobile. Panel titles are 18px, content titles are 15px desktop and 16px mobile, and descriptive text is 13–14px. Small metadata stays readable and mobile form inputs use 16px. Cards, controls and padding shrink alongside typography so the interface feels compact rather than zoomed.
 
 ## Layout
 
-- Library and Social Studio: collections at left, a central pastel content shelf, and scheduled items/channels at right. Six cards initially; Show more reveals six more. A list toggle provides a compact card arrangement, not the prior data table.
+- Library and Social Studio: collections at left, a central pastel content shelf, and scheduled items/channels at right. Three cards per row from 1400px, two below. Six cards initially; Show more reveals six more. A list toggle provides a compact card arrangement, not the prior data table.
 - Calendar: a broad seven-day selector above chronological pastel agenda cards. A compact month picker and state totals sit alongside it. Day and Week views share the same agenda structure.
 - Reviews: a portrait queue beside a large pastel brief, publishing facts and review actions. Queue changes and scheduling update shared local content.
 - Keywords: rounded search opportunity rows beside one selected topic's planning sheet and numeric context. No inherited four-metric header or dense keyword table.
@@ -68,7 +68,7 @@ White panels and pastel inset content provide separation without shadows. Dialog
 
 ## Shapes
 
-Use 40px panel corners, 27–32px inset cards, circular 44px icon actions and outlined or teal pill controls. These shapes come from the approved home rather than the previous operational UI.
+Use 28px panel corners (25px mobile), 23px inset cards, compact desktop icon actions and 44px mobile icon actions and outlined or teal pill controls. These shapes come from the approved home rather than the previous operational UI.
 
 ## Components
 

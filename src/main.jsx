@@ -28,6 +28,7 @@ import { content } from "./workspace-data";
 import { extraContent } from "./content-data";
 import "./section-shell.css";
 import "./section-pages.css";
+import "./compact-layout.css";
 const views = [
   "Dashboard",
   "Content library",
