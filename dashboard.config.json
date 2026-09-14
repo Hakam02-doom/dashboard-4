@@ -1,0 +1,12 @@
+{
+  "number": 4,
+  "directory": "dashboard-4",
+  "repository": "Hakam02-doom/dashboard-4",
+  "vercelProject": "dashboard-4",
+  "vercelProjectId": "prj_mKnt3sIl87RNXlt1HowpJA5PwEF9",
+  "vercelOrgId": "team_K0yDVgdw32aZsj9tWfqWx6eO",
+  "vercelScope": "hakams-projects-a6d8ca99",
+  "devPort": 5180,
+  "previewPort": 4180,
+  "kind": "vite"
+}
